@@ -1,6 +1,6 @@
 <template>
   <div class="wrap">
-    <header-top title="家 猫 日 记" />
+    <header-top title="炫 彩 回 忆" />
     <div class="content">
       <van-tabs v-model="active" animated swipeable>
         <van-tab v-for="e in navBArList" :title="e.title" :key='e.index'>
