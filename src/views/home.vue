@@ -27,5 +27,11 @@
 </script>
 <style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../common/stylus/mixin.styl"
-
+</style>
+<style scoped>
+.content{
+  height: 90vh;
+  background-image: url('../assets/images/background.jpg');
+  background-size:cover;
+}
 </style>
