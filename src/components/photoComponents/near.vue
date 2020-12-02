@@ -1,11 +1,20 @@
 <template>
   <div>
-    近期
+    <album></album>
   </div>
 </template>
 
 <script>
-export default {};
+import album from '../album';
+export default {
+	data() {
+    return {
+    }
+  },
+  components:{
+    album
+  }
+};
 </script>
 
 <style lang="stylus" rel="stylesheet/stylus" scoped>
