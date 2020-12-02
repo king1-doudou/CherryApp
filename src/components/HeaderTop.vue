@@ -22,7 +22,7 @@
 <style lang="stylus" rel="stylesheet/stylus">
   @import "../common/stylus/mixin.styl"
   .header
-    background-color $color-theme
+    background-color $color-header
     /*position fixed*/
     position relative
     z-index 100
@@ -40,7 +40,7 @@
       text-align center
       .header_title_text
         font-size 18px
-        color #fff
+        color $color-font
         display block
 
 </style>

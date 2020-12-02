@@ -16,8 +16,14 @@ Vue.config.productionTip = false
 
 Vue.component('icon', Icon) //注册svg插件
 Vue.use(utils)
-import { Button } from 'vant';
+
+
+import { Button, Tab, Tabs } from 'vant';
 Vue.use(Button)
+Vue.use(Tab);
+Vue.use(Tabs);
+
+
 new Vue({
   router,
   store,

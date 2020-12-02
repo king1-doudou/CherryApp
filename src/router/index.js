@@ -22,6 +22,15 @@ Vue.use(VueRouter)
       title: '我的',
       isMenu: true
     }
+  },
+  {
+    path: '/photo',
+    name: 'Me',
+    component: () => import('../views/photo.vue'),
+    meta: {
+      title: '相册',
+      isMenu: true
+    }
   }
 ]
 

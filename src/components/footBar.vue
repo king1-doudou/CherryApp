@@ -5,10 +5,15 @@
       <icon class="icon" name="cutcat20" v-else></icon>
       <p :class="selIndex === 0 ? 'sel' : ''" class="text">首 页</p>
     </div>
-    <div @click="changTab(1)" class="item mine">
+    <div @click="changTab(1)" class="item photo">
       <icon class="icon" name="cutcat19" v-if="selIndex === 1"></icon>
       <icon class="icon" name="cutcat21" v-else></icon>
-      <p :class="selIndex === 1 ? 'sel' : ''" class="text">我 的</p>
+      <p :class="selIndex === 1 ? 'sel' : ''" class="text">相 册</p>
+    </div>
+    <div @click="changTab(2)" class="item mine">
+      <icon class="icon" name="cutcat19" v-if="selIndex === 2"></icon>
+      <icon class="icon" name="cutcat01" v-else></icon>
+      <p :class="selIndex === 2 ? 'sel' : ''" class="text">我 的</p>
     </div>
   </div>
 </template>
@@ -17,7 +22,7 @@ export default {
   data() {
     return {
       selIndex: -1,
-      routerList: ["/", "/me"],
+      routerList: ["/",'/photo', "/me"],
     };
   },
   mounted() {
@@ -62,7 +67,8 @@ export default {
       font-weight: 500;
       color: rgba(52, 52, 52, 1);
       line-height: 14px;
-      z-index 2
+      z-index 2;
+      color $color-font-default
     .sel
-      color $color-theme
+      color $color-font-active
 </style>
